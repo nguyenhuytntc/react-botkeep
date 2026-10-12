@@ -8,7 +8,7 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "start": "npm run build && vite preview --host 0.0.0.0 --port 30641 --strictPort"
+        "start": "npm run build && vite preview --host 0.0.0.0 --port ${PORT:?PORT is required} --strictPort"
     },
     "dependencies": {
         "react": "^19.2.8",
